@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #fdf6fb; /* rosado suave */
-  color: #222; /* texto oscuro para buen contraste */
+  color: #222;
   line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ a {
 
 a:focus,
 button:focus {
-  outline: 3px solid #0057b7; /* mejora la navegación con teclado */
+  outline: 3px solid #0057b7;
   outline-offset: 3px;
 }
 
@@ -63,15 +63,15 @@ button:focus {
   padding-bottom: 3px;
 }
 
-/* === HERO CENTRAL (INDEX) === */
+/* === HERO INDEX === */
 .hero-corea {
   width: 90%;
   max-width: 1000px;
   height: 400px;
   margin: 40px auto;
-  background: url("../images/Corea del sur.jpg") no-repeat center center/cover;
+  background: url("../images/Corea-del-sur.jpg") no-repeat center center/cover;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .hero-corea h1 {
@@ -80,7 +80,7 @@ button:focus {
   font-size: 2rem;
 }
 
-/* === BOTÓN (INDEX) === */
+/* === BOTONES === */
 .explorar {
   text-align: center;
   margin: 20px 0;
@@ -89,7 +89,7 @@ button:focus {
 .btn {
   padding: 12px 25px;
   border: 2px solid #333;
-  background: #ffffff;
+  background: #fff;
   color: #000;
   font-weight: bold;
   cursor: pointer;
@@ -102,7 +102,7 @@ button:focus {
   background: #e6e6e6;
 }
 
-/* === SECCIONES DE DESTINOS (INDEX) === */
+/* === DESTINOS INDEX === */
 .destinos {
   margin: 30px auto;
   max-width: 1000px;
@@ -127,8 +127,8 @@ button:focus {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .card img {
@@ -144,10 +144,10 @@ button:focus {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 3px 6px rgba(0,0,0,0.7);
 }
 
-/* === SECCIÓN SEÚL === */
+/* === PÁGINA DE SEÚL === */
 .seul-body {
   background: url("../images/Seul-fondo.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -162,7 +162,6 @@ button:focus {
   padding: 60px 20px;
 }
 
-/* === GALERÍA === */
 .galeria-contenedor {
   display: flex;
   flex-direction: column;
@@ -176,13 +175,13 @@ button:focus {
   gap: 20px;
 }
 
-/* Polaroid */
+/* Polaroids */
 .polaroid {
-  background: #ffffff;
+  background: #fff;
   border-radius: 12px;
   padding: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 .polaroid img {
@@ -199,7 +198,6 @@ button:focus {
   color: #000;
 }
 
-/* === BOTÓN EXPLORAR SEÚL === */
 .explorar-seul {
   margin-top: 30px;
   text-align: center;
@@ -214,8 +212,6 @@ button:focus {
   border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .explorar-seul .btn:hover,
@@ -232,66 +228,16 @@ button:focus {
   color: #444;
 }
 
-.site-footer .social {
-  margin-bottom: 6px;
-}
-
 .site-footer .social img {
   width: 24px;
   margin: 0 5px;
-  vertical-align: middle;
-  transition: transform 0.3s;
+  transition: 0.3s;
 }
 
-.site-footer .social img:hover,
-.site-footer .social img:focus {
+.site-footer .social img:hover {
   transform: scale(1.2);
 }
 
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 1024px) {
-  .hero-corea {
-    height: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-list {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .galeria-seul {
-    grid-template-columns: 1fr;
-  }
-
-  .galeria-contenedor {
-    margin-right: 0;
-  }
-
-  .hero-corea {
-    width: 95%;
-    height: 250px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .site-header {
-    padding: 10px 0;
-  }
-
-  .hero-corea {
-    height: 200px;
-  }
-
-  .overlay-text span {
-    font-size: 16px;
-  }
-}
 /* === SUBMENÚ === */
 .has-submenu {
   position: relative;
@@ -301,16 +247,16 @@ button:focus {
   display: none;
   position: absolute;
   background: #fff;
-  list-style: none;
   padding: 10px;
+  list-style: none;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .submenu li a {
-  padding: 5px 10px;
   display: block;
+  padding: 5px 10px;
   color: #333;
 }
 
@@ -338,20 +284,27 @@ button:focus {
   padding: 10px 20px;
   background: #0077cc;
   color: #fff;
-  border: none;
   border-radius: 6px;
 }
 
-/* MENSAJE DE BIENVENIDA */
-.mensaje {
-  text-align:center;
-  margin-top:15px;
-  font-size: 1.3rem;
-  font-weight:bold;
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .galeria-seul {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-contenedor {
+    margin-right: 0;
+  }
 }
 
-.idioma-select {
-  display:block;
-  margin:10px auto;
-  padding: 5px;
+@media (max-width: 480px) {
+  .hero-corea {
+    height: 200px;
+  }
 }
