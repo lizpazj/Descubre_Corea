@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubre Corea del Sur</title>
+  <meta name="description" content="Explora los destinos más fascinantes, la gastronomía y la cultura de Corea del Sur con un diseño accesible y adaptable.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SALTO RÁPIDO DE ACCESIBILIDAD -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Menú principal">
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="seul.html">Destinos</a></li>
+
+        <!-- MENÚ DESPLEGABLE -->
+        <li class="has-submenu">
+          <a href="#">Cultura</a>
+          <ul class="submenu">
+            <li><a href="#">K-pop</a></li>
+            <li><a href="#">Tradiciones</a></li>
+            <li><a href="#">Festivales</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Gastronomía</a></li>
+        <li><a href="#">Planifica tu viaje</a></li>
+        <li><a href="#">Esien</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MENSAJE DINÁMICO -->
+  <div id="mensaje-bienvenida" class="mensaje"></div>
+
+  <select id="idioma" class="idioma-select">
+    <option value="es">Español</option>
+    <option value="en">Inglés</option>
+    <option value="kr">Coreano</option>
+  </select>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="main-content">
+
+    <!-- HERO PRINCIPAL -->
+    <section class="hero-corea" role="banner" aria-label="Imagen principal de Corea del Sur">
+      <h1>Descubre Corea del Sur</h1>
+    </section>
+
+    <!-- SLIDER -->
+    <section class="slider">
+      <img id="slide" src="images/seul.jpg" alt="Slider de imágenes de Corea del Sur">
+      <button id="prev">Anterior</button>
+      <button id="next">Siguiente</button>
+    </section>
+
+    <!-- BOTÓN EXPLORAR -->
+    <div class="explorar">
+      <a href="seul.html" class="btn">Explorar Destinos</a>
+    </div>
+
+    <!-- SECCIÓN DESTINOS -->
+    <section class="destinos">
+      <h2 style="text-align:center;">Destinos más visitados</h2>
+
+      <div class="grid grid-4">
+        <article class="card overlay-text">
+          <a href="seul.html">
+            <img src="images/seul.jpg" alt="Vista panorámica de la ciudad de Seúl">
+            <span>Seúl</span>
+          </a>
+        </article>
+
+        <article class="card overlay-text">
+          <img src="images/busan.jpg" alt="Busan">
+          <span>Busan</span>
+        </article>
+
+        <article class="card overlay-text">
+          <img src="images/jeju.jpg" alt="Jeju">
+          <span>Jeju</span>
+        </article>
+
+        <article class="card overlay-text">
+          <img src="images/gyeongju.jpg" alt="Gyeongju">
+          <span>Gyeongju</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN GASTRONOMÍA -->
+    <section class="destinos">
+      <h2 style="text-align:center;">Gastronomía y Vestuario</h2>
+
+      <div class="grid grid-2">
+        <article class="card overlay-text">
+          <img src="images/gastronomia.jpg" alt="Platillos típicos coreanos">
+          <span>Gastronomía Coreana</span>
+        </article>
+
+        <article class="card overlay-text">
+          <img src="images/vestuario.jpg" alt="Hanbok tradicional">
+          <span>Vestuario Tradicional</span>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="social">
+      <a><img src="images/x.png"></a>
+      <a><img src="images/instagram.png"></a>
+      <a><img src="images/whatsapp.png"></a>
+    </div>
+    <p>© 2025 Descubre Corea</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
